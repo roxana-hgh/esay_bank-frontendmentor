@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans&display=swap');
+
+body {
+    font-family: 'Public Sans', sans-serif;
+    background-color: hsl(0, 0%, 98%);
+    font-size: 18px;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header{
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    z-index: 4;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 10px;
+
+}
+
+.logo{
+    width: 170px;
+    height: 30px;
+    padding-top: 10px;
+}
+
+.nav-ul{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    
+}
+
+.nav-ul li {
+    margin: 0 15px ;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.nav-ul li a {
+    text-decoration: none;
+    color: hsl(233, 8%, 62%);
+}
+
+.nav-ul li a:hover{
+    color: hsl(233, 26%, 24%);
+    border-bottom: 3px solid hsl(136, 65%, 51%);
+    
+}
+
+.req{
+    background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
+    background: linear-gradient(to right, #31d35c, #2bb7da);
+    border-radius: 35px;
+    border: 0;
+    color: white;
+    font-weight: 700;
+    width: 165px;
+    height: 45px;
+    cursor: pointer;
+    opacity: 1;
+    
+}
+
+.req:hover {
+    opacity: 0.75
+}
+
+.req:focus {
+    border: 0;
+    outline: none;
+}
+
+.hamberger {
+    background-color: transparent;
+    height: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.main-container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.main {
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    
+}
+
+.head-pic {
+    background-image: url("./images/bg-intro-desktop.svg");
+    position: absolute;
+    width: 80%;
+    height: 45rem;
+    right: -22rem;
+    top:-7rem;
+    background-size: cover;
+    z-index: 0;
+    
+}
+
+.phones-pic {
+    background-image: url("./images/image-mockups.png");
+    position: absolute;
+    width: 80%;
+    height: 56rem;
+    right: 6%;
+    top:3rem;
+    z-index: 5;
+    
+}
+
+
+.head-text{
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 45rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.head-title{
+   font-weight: 500;
+   font-size: 3.6rem;
+   color: hsl(233, 26%, 24%);
+   margin: 0;
+
+}
+
+.sub-title{
+    width: 25em;
+    color: hsl(233, 8%, 62%);
+    margin: 25px 0;
+}
+
+.services{
+    background-color: hsl(0, 0%, 94%);
+    position: absolute;
+    width: 100%;
+    padding-top: 5%;
+    top: 45rem;
+    z-index: -1;
+}
+
+.why h4 {
+    color:hsl(233, 26%, 24%);
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.why p {
+    color:hsl(233, 8%, 62%);
+    width: 42%;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin: 5% 0;
+}
+
+.card {
+    width: 20%;
+}
+
+.card h5 {
+    color: hsl(233, 26%, 24%);
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.card p {
+    color:hsl(233, 8%, 62%);
+}
+
+.articles{
+    background-color: hsl(0, 0%, 98%);
+    position: absolute;
+    width: 100%;
+    top: 85rem;
+}
+
+.articles h4{
+    font-weight: 600;
+    font-size: 2rem;
+    color:hsl(233, 26%, 24%) ;
+}
+
+.article-img {
+    width: 100%;
+    height: 45%;
+    border-top-right-radius: 3% ;
+    border-top-left-radius: 3%
+}
+
+.article-card {
+    width: 23%;
+    background-color: hsl(0, 0%, 100%);
+    padding-bottom: 2%;
+    cursor: pointer;
+}
+
+.article-card:hover{
+    transform: scale(1.06);
+}
+
+.article-card small ,
+.article-card h5 ,
+.article-card p {
+    padding: 0 10%;
+}
+
+.article-card small {
+    color: hsl(233, 8%, 62%);
+}
+
+footer{
+    position: relative;
+    top:130rem;
+    background-color: hsl(233, 26%, 24%);
+    width: 100%;
+    
+}
+
+.footer{
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2%;
+}
+
+.left img{
+    cursor: pointer;
+}
+
+.icons{
+    padding-top: 5%;
+}
+
+
+.middle{
+    display: flex;
+    flex-flow: column wrap;
+    width: 43%;
+}
+
+.middle p {
+    color: white;
+    margin: 2% 0;
+    font-size: 1rem;
+    cursor: pointer;
+    width: auto;
+    
+}
+
+
+.middle p:hover {
+    color: hsl(136, 65%, 51%);
+}
+
+
+.right{
+    padding-top: 2%;
+}
+.right p{
+    color: hsl(233, 8%, 62%);
+}
+
+
+
+
+
+@media screen and (max-width: 880px){
+    
+    .nav-ul {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nav-ul li {
+        padding: 5px 0;
+    }
+
+    .nav-ul li a {
+        color: hsl(233, 26%, 24%);
+        font-weight: 600;
+    }
+
+    .nav-ul.show {
+        display: flex;
+    }
+
+    .logo {
+        padding-top: 0;
+        margin: 7px 0;
+    }
+
+    .hamberger{
+        margin-top: 10px;
+        display: block;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+
+    .main-container{
+        width: 100%;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .head-pic {
+        background-image: url("./images/bg-intro-mobile.svg");
+        background-position: center;
+        background-size:cover;
+        width: 100%;
+        height: 41rem;
+        top: 0;
+        right: 0;
+        position: relative;
+
+        
+        
+    }
+
+    .phones-pic {
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 100%;
+        height: 57rem;
+        right: 0;
+        top: -40%;
+        z-index: 3;
+        
+    }
+
+    
+    .head-text{
+        position: relative;
+        width: 80%;
+        align-items: center;
+        margin: 0 auto;
+        justify-content:unset;
+        height: 100%;
+        margin-bottom: 10%;
+    }
+    
+    .head-title{
+        font-weight: 400;
+        font-size: 3rem;
+        color: hsl(233, 26%, 24%);
+        text-align: center;
+        margin: 0 auto;
+     }
+     
+     .sub-title{
+        width: 100%;
+        text-align: center;
+        color: hsl(233, 8%, 62%);
+     }
+
+    .services{
+        top: 63rem;
+        position: absolute; 
+    }
+
+    .why{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .why p {
+        width: 100%;
+        text-align: center;
+    }
+    .cards{
+        flex-direction: column;
+        
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .article-card{
+        margin: 5% 0;
+        border-radius: 2%;
+    }
+
+    .articles{
+        position: absolute;
+        top:145rem
+    }
+
+    .articles h4 {
+        text-align: center;
+    }
+
+    .article-card small{
+        margin-top: 5%;
+    }
+
+    footer{
+        top:240rem;
+    }
+    
+    .footer{
+        height: 27rem;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+}
+
+
+
